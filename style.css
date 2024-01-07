@@ -9,8 +9,6 @@
 
 /* Make the body look nice and use flexbox to center things on the viewport */
 body {
-  height: 50vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +18,9 @@ body {
 }
 
 .fullscreen__into {
+  width: 400px;
+  padding: 3rem 3rem;
+
   & .fullscreen__into--logo {
     display: flex;
     align-items: center;
