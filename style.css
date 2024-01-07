@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* apply Orbitron-Regular.ttf font from /fonts/Orbitron-Regular.ttf */
+  font-family: 'Orbitron', sans-serif;
+  user-select: none;
+}
+
+/* Make the body look nice and use flexbox to center things on the viewport */
+body {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  font-size: 0.75rem;
+}
+
+.fullscreen__into {
+  & .fullscreen__into--logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & img {
+      width: 100%;
+      max-width: fit-content;
+      height: fit-content;
+    }
+  }
+
+  & span {
+    color: #f00;
+  }
+}

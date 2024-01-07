@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Full Screen YT Short",
+  "version": "1.0",
+  "description": "A Chrome extension for quick full-screen on YouTube.",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_icon": {
+      "16": "./assets/images/icon16.png",
+      "48": "./assets/images/icon48.png",
+      "128": "./assets/images/icon128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Click to activate full-screen mode on YouTube"
+  },
+  "icons": {
+    "16": "./assets/images/icon16.png",
+    "48": "./assets/images/icon48.png",
+    "128": "./assets/images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
