@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Full Screen YT Short",
+  "name": "Full Screen YT Shorts",
   "version": "1.0",
   "description": "A Chrome extension for quick full-screen on YouTube.",
   "permissions": ["activeTab"],

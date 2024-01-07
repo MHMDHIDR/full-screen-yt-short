@@ -13,6 +13,6 @@ function fullscreen() {
     const videoId = urlParts[urlParts.indexOf('shorts') + 1]
 
     // Redirect to the watch page with the extracted video ID
-    window.location.href = `https://www.youtube.com/watch?v=${videoId}`
+    window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank')
   }
 }
